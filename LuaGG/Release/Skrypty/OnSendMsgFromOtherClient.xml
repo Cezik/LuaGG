@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LuaGG Nazwa="Wyslana wiadomosc z innego klienta" Wersja="1.0" Autor="Czepek" Kontakt="czepek221@gmail.com" Aktywowany="tak">
+	<Skrypt>
+		<![CDATA[
+			function onSendMsgFromOtherClient(ggNumber, Msg, Date)
+				addConsoleMsg(">> Wyslano wiadomosc na nr " .. ggNumber .. " z innego klienta o tresci: '" .. Msg .."'")
+				return true
+			end
+		]]>
+	</Skrypt>
+</LuaGG>

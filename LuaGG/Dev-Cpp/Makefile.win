@@ -1,0 +1,66 @@
+# Project: LuaGG
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = Obj/LuaGG_private.res
+OBJ  = Obj/LuaGG.o Obj/Connection.o Obj/Protocol.o Obj/LUAScript.o Obj/Tools.o Obj/Configuration.o Obj/WinGUI.o Obj/MainWindow.o Obj/Threads.o Obj/ChangeStatus.o Obj/ScriptManager.o Obj/AboutDlg.o $(RES)
+LINKOBJ  = Obj/LuaGG.o Obj/Connection.o Obj/Protocol.o Obj/LUAScript.o Obj/Tools.o Obj/Configuration.o Obj/WinGUI.o Obj/MainWindow.o Obj/Threads.o Obj/ChangeStatus.o Obj/ScriptManager.o Obj/AboutDlg.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -mwindows -lcomctl32 -lshlwapi -lpsapi -lws2_32 -llua5.1 -lxml2 -lboost_regex -lboost_filesystem -lboost_system -lcrypto -lz -O3 -s  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/include" 
+BIN  = Release/LuaGG.exe
+CXXFLAGS = $(CXXINCS) -D_WIN32_WINNT=0x0501 -D_WIN32_IE=0x0600   -fexpensive-optimizations -O3
+CFLAGS = $(INCS)   -fexpensive-optimizations -O3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Release/LuaGG.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Release\LuaGG.exe" $(LIBS)
+
+Obj/LuaGG.o: ../LuaGG.cpp
+	$(CPP) -c ../LuaGG.cpp -o Obj/LuaGG.o $(CXXFLAGS)
+
+Obj/Connection.o: ../Connection.cpp
+	$(CPP) -c ../Connection.cpp -o Obj/Connection.o $(CXXFLAGS)
+
+Obj/Protocol.o: ../Protocol.cpp
+	$(CPP) -c ../Protocol.cpp -o Obj/Protocol.o $(CXXFLAGS)
+
+Obj/LUAScript.o: ../LUAScript.cpp
+	$(CPP) -c ../LUAScript.cpp -o Obj/LUAScript.o $(CXXFLAGS)
+
+Obj/Tools.o: ../Tools.cpp
+	$(CPP) -c ../Tools.cpp -o Obj/Tools.o $(CXXFLAGS)
+
+Obj/Configuration.o: ../Configuration.cpp
+	$(CPP) -c ../Configuration.cpp -o Obj/Configuration.o $(CXXFLAGS)
+
+Obj/WinGUI.o: ../WinGUI.cpp
+	$(CPP) -c ../WinGUI.cpp -o Obj/WinGUI.o $(CXXFLAGS)
+
+Obj/MainWindow.o: ../MainWindow.cpp
+	$(CPP) -c ../MainWindow.cpp -o Obj/MainWindow.o $(CXXFLAGS)
+
+Obj/Threads.o: ../Threads.cpp
+	$(CPP) -c ../Threads.cpp -o Obj/Threads.o $(CXXFLAGS)
+
+Obj/ChangeStatus.o: ../ChangeStatus.cpp
+	$(CPP) -c ../ChangeStatus.cpp -o Obj/ChangeStatus.o $(CXXFLAGS)
+
+Obj/ScriptManager.o: ../ScriptManager.cpp
+	$(CPP) -c ../ScriptManager.cpp -o Obj/ScriptManager.o $(CXXFLAGS)
+
+Obj/AboutDlg.o: ../AboutDlg.cpp
+	$(CPP) -c ../AboutDlg.cpp -o Obj/AboutDlg.o $(CXXFLAGS)
+
+Obj/LuaGG_private.res: LuaGG_private.rc 
+	$(WINDRES) -i LuaGG_private.rc --input-format=rc -o Obj/LuaGG_private.res -O coff 

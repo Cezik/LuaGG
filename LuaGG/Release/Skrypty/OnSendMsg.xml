@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LuaGG Nazwa="Gdy wysłano wiadomosc" Wersja="1.0" Autor="Czepek" Kontakt="czepek221@gmail.com" Aktywowany="tak">
+	<Skrypt>
+		<![CDATA[
+			function onSendMsg(ggNumber, Msg, Date)
+				addConsoleMsg(">> Wyslano wiadomosc: '".. Msg .."', na numer: " .. ggNumber)
+				return true
+			end
+		]]>
+	</Skrypt>
+</LuaGG>

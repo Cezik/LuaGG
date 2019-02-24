@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LuaGG>
+	<Skrypt NazwaSkryptu="OnSendMessage" NazwaPliku="LUAScripts\OnSendMessage.lua" CzasAktywowany="nie" Czas="0" />
+	<!--
+	<Skrypt NazwaSkryptu="OnRecvMessage" NazwaPliku="LUAScripts\OnRecvMessage.lua" CzasAktywowany="nie" Czas="0" />
+
+	<Skrypt NazwaSkryptu="Spam" NazwaPliku="LUAScripts\Spam.lua" CzasAktywowany="tak" Czas="1500" />
+-->
+</LuaGG>

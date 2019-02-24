@@ -1,0 +1,143 @@
+# depslib dependency file v1.0
+1292688936 source:d:\pliki z mojego svn\luagg\trunk\changestatus.cpp
+	"ChangeStatus.h"
+
+1291330932 d:\pliki z mojego svn\luagg\trunk\changestatus.h
+	"LuaGG.h"
+
+1292683094 d:\pliki z mojego svn\luagg\trunk\luagg.h
+	<cstdlib>
+	<iostream>
+	<string>
+	"Resources.h"
+	"Protocol.h"
+	"LuaScript.h"
+	"Configuration.h"
+	"WinGUI.h"
+	"GaduGadu.h"
+	"Connection.h"
+	<commctrl.h>
+
+1295101754 d:\pliki z mojego svn\luagg\trunk\resources.h
+	<Windows.h>
+
+1301008328 d:\pliki z mojego svn\luagg\trunk\protocol.h
+	<string>
+	<openssl/sha.h>
+	"LuaGG.h"
+
+1301008926 d:\pliki z mojego svn\luagg\trunk\luascript.h
+	<string>
+	<vector>
+	"Tools.h"
+	"LuaGG.h"
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+
+1302438137 d:\pliki z mojego svn\luagg\trunk\tools.h
+	<boost/regex.hpp>
+	<libxml/parser.h>
+	<fstream>
+	<Shlwapi.h>
+	"LuaGG.h"
+
+1292448812 d:\pliki z mojego svn\luagg\trunk\configuration.h
+	<string>
+	"Tools.h"
+	"LuaGG.h"
+	<lua.h>
+	<lauxlib.h>
+
+1292368416 d:\pliki z mojego svn\luagg\trunk\wingui.h
+	<Windows.h>
+	<commctrl.h>
+	<shlwapi.h>
+	<Psapi.h>
+	<string>
+	"LuaGG.h"
+	"Resources.h"
+
+1301159204 d:\pliki z mojego svn\luagg\trunk\gadugadu.h
+	"LuaGG.h"
+
+1291327988 d:\pliki z mojego svn\luagg\trunk\connection.h
+	<Winsock2.h>
+	<string>
+	"LuaGG.h"
+
+1300985174 source:d:\pliki z mojego svn\luagg\trunk\configuration.cpp
+	"Configuration.h"
+
+1290779056 source:d:\pliki z mojego svn\luagg\trunk\connection.cpp
+	"Connection.h"
+	"Resources.h"
+
+1301009008 source:d:\pliki z mojego svn\luagg\trunk\luascript.cpp
+	"LUAScript.h"
+	"WinGUI.h"
+	"Protocol.h"
+	"ScriptManager.h"
+	"Connection.h"
+	"Configuration.h"
+
+1271427588 d:\pliki z mojego svn\luagg\trunk\scriptmanager.h
+	<string>
+	<map>
+	"LuaGG.h"
+
+1295101754 source:d:\pliki z mojego svn\luagg\trunk\luagg.cpp
+	"LuaGG.h"
+	"MainWindow.h"
+	"ChangeStatus.h"
+	"ScriptManager.h"
+
+1291330934 d:\pliki z mojego svn\luagg\trunk\mainwindow.h
+	"LuaGG.h"
+
+1301232906 source:d:\pliki z mojego svn\luagg\trunk\protocol.cpp
+	"Protocol.h"
+	"Configuration.h"
+	"Threads.h"
+
+1292449812 d:\pliki z mojego svn\luagg\trunk\threads.h
+	"LuaGG.h"
+
+1295101754 source:d:\pliki z mojego svn\luagg\trunk\resources.rc
+	"Resources.h"
+	<Windows.h>
+
+1277556284 source:d:\pliki z mojego svn\luagg\trunk\scriptmanager.cpp
+	"ScriptManager.h"
+	<boost/filesystem.hpp>
+	<libxml/xmlmemory.h>
+	<libxml/parser.h>
+
+1300985784 source:d:\pliki z mojego svn\luagg\trunk\tools.cpp
+	<sstream>
+	"Tools.h"
+	"WinGUI.h"
+	"Configuration.h"
+
+1294585014 source:d:\pliki z mojego svn\luagg\trunk\wingui.cpp
+	"WinGUI.h"
+
+1274195324 source:d:\pliki z mojego svn\luagg\trunk\mainwindow.cpp
+	"MainWindow.h"
+	"Threads.h"
+	"ChangeStatus.h"
+	"ScriptManager.h"
+
+1298417308 source:d:\pliki z mojego svn\luagg\trunk\threads.cpp
+	"Threads.h"
+
+1274189948 d:\pliki z mojego svn\luagg\trunk\sha-1.h
+	"LuaGG.h"
+	<openssl/sha.h>
+
+1292257062 source:d:\pliki z mojego svn\luagg\trunk\aboutdlg.cpp
+	"AboutDlg.h"
+
+1291331674 d:\pliki z mojego svn\luagg\trunk\aboutdlg.h
+	"LuaGG.h"
+

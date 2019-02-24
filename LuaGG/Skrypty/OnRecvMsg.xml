@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LuaGG Nazwa="Odpowiedz Na Otrzymywanie Wiadomosci" Wersja="1.0" Autor="Czepek" Kontakt="czepek221@gmail.com" Aktywowany="tak">
+	<Skrypt>
+		<![CDATA[
+			function onRecvMsg(ggNumber, Msg, Date)
+				sendMessage(ggNumber, "Przykro mi, ale nie ma mnie w domu. Bede za godzine.")
+			end
+		]]>
+	</Skrypt>
+</LuaGG>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LuaGG Nazwa="Odpowiedz Na Otrzymywanie Wiadomosci" Wersja="1.0" Autor="Czepek" Kontakt="czepek221@gmail.com" Aktywowany="tak">
+	<Skrypt>
+		<![CDATA[
+			function onRecvMsg(ggNumber, Msg, Date)
+				addConsoleMsg(">> Osoba " .. ggNumber .. ", przeslala wiadomosc: '" .. Msg .. "'")
+				return true
+			end
+		]]>
+	</Skrypt>
+</LuaGG>

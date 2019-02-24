@@ -1,0 +1,22 @@
+* Funkcje LUA:
+	* getConfigValue(key) - pobiera wartoœæ z pliku 'Config.lua'
+	* messageBox(type, message) - wyœwietla okno z komunikatem (typ - dostêpne w 'Globals.lua')
+	* sendMessage(number, message) - wysy³a wiadomoœæ na numer GG
+	* changeStatus(status, desc) - zmienia status (statusy dostêpne w 'Globals.lua')
+	* addConsoleMsg(message) - dodaje wiadomoœæ do konsoli
+	* setStatusBar(message) - zmienia wiadomoœæ paska statusu konsoli
+	* isLoggedIn() - sprawdza czy jesteœ zalogowany
+	* isConnected() - sprawdza, czy jesteœ po³¹czony z prawdziwym serwerem
+	* getCurrentStatus() - zwraca obecny status
+	* getTrueLoginServer() - zwraca prawdziwy adres IP serwera
+	* getExePath() - zwraca œciê¿kê do pliku *.exe
+	* getLastSendMessage() - zwraca ostatni¹ wys³an¹ wiadomoœæ
+	* getLastRecvMessage() - zwraca ostatni¹ odebran¹ wiadomoœæ
+	* getLastRecvPacket() - zwraca ostatni odebrany pakiet
+	* getMyIP() - zwraca adres IP
+	* disconnectMultiLogon(ID) - roz³¹cza sesjê multilogowania
+* Funkcje globalne:
+	* onSendMsg(ggNumber, msg) - gdy wys³ano wiadomoœci
+	* onRecvMsg(ggNumber, msg, date) - gdy odebrano wiadomoœæ
+	* onSendMsgFromOtherClient(ggNumber, msg, date) - gdy ktoœ wys³a³ wiadomoœæ z innego klienta
+	* onMultiLogon(loginIP, logonTime, connectionID, clientName) - gdy ktoœ siê zalogowa³ na nasz numer GG

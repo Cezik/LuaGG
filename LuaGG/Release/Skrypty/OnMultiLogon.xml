@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LuaGG Nazwa="Ktos zalogowal sie na nasz numerek" Wersja="1.0" Autor="Czepek" Kontakt="czepek221@gmail.com" Aktywowany="tak">
+	<Skrypt>
+		<![CDATA[
+			function onMultiLogon(loginIP, loginTime, connectionID, clientName)
+				addConsoleMsg(">> Ktos sie polaczyl z adresu IP: " .. convertIntToIP(loginIP) .. "")
+				return true
+			end
+		]]>
+	</Skrypt>
+</LuaGG>
